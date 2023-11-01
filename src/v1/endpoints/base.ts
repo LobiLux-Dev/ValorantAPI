@@ -1,8 +1,12 @@
 import { CodeLang } from '../../interfaces/v1'
-import type { IBase } from '../../interfaces/v1/endpoints'
 
-export abstract class Base implements IBase {
-	protected readonly apiURL: string = 'https://valorant-api.com/v1'
+export abstract class Base {
+	private readonly apiURL: string = 'https://valorant-api.com/v1'
+	private endpoint: string = this.constructor.name.toLowerCase()
 
-	public constructor(protected readonly codeLang: CodeLang) {}
+	protected readonly finalURL: string
+
+	public constructor(protected readonly codeLang: CodeLang) {
+		this.finalURL = `${this.apiURL}/${this.endpoint}?language=${this.codeLang}`
+	}
 }
