@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IMaps extends IBase {}
+export interface Maps extends Base {}

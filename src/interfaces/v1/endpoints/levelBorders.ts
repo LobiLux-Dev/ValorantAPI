@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface ILevelBorders extends IBase {}
+export interface LevelBorders extends Base {}

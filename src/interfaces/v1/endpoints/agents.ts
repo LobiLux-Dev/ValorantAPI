@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IAgents extends IBase {}
+export interface Agents extends Base {}

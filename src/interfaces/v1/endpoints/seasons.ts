@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface ISeasons extends IBase {}
+export interface Seasons extends Base {}

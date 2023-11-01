@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IContentTiers extends IBase {}
+export interface ContentTiers extends Base {}

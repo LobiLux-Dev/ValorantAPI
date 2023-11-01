@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IThemes extends IBase {}
+export interface Themes extends Base {}

@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface ICompetitiveTiers extends IBase {}
+export interface CompetitiveTiers extends Base {}

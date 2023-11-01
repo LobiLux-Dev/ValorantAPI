@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface ICeremonies extends IBase {}
+export interface Ceremonies extends Base {}

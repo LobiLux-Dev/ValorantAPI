@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IGear extends IBase {}
+export interface Gear extends Base {}

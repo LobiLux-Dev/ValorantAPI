@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface ICurrencies extends IBase {}
+export interface Currencies extends Base {}

@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IPlayerCards extends IBase {}
+export interface PlayerCards extends Base {}

@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IBundles extends IBase {}
+export interface Bundles extends Base {}

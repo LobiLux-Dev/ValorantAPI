@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IPlayerTitles extends IBase {}
+export interface PlayerTitles extends Base {}

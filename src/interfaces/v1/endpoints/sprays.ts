@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface ISprays extends IBase {}
+export interface Sprays extends Base {}

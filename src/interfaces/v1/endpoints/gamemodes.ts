@@ -1,3 +1,3 @@
-import { IBase } from './base'
+import { Base } from './base'
 
-export interface IGamemodes extends IBase {}
+export interface Gamemodes extends Base {}
