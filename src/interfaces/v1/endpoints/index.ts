@@ -1,5 +1,4 @@
 export type * from './agents'
-export type * from './base'
 export type * from './buddies'
 export type * from './bundles'
 export type * from './ceremonies'

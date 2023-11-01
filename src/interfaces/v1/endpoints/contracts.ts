@@ -1,3 +1,1 @@
-import { Base } from './base'
-
-export interface Contracts extends Base {}
+export interface Contracts {}

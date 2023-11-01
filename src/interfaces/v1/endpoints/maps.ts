@@ -1,3 +1,1 @@
-import { Base } from './base'
-
-export interface Maps extends Base {}
+export interface Maps {}

@@ -1,3 +1,1 @@
-import { Base } from './base'
-
-export interface Gear extends Base {}
+export interface Gear {}
