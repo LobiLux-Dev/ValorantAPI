@@ -1,3 +1,45 @@
+import {
+	Agents,
+	Buddies,
+	Bundles,
+	Ceremonies,
+	CompetitiveTiers,
+	ContentTiers,
+	Contracts,
+	Currencies,
+	Events,
+	Gamemodes,
+	Gear,
+	LevelBorders,
+	Maps,
+	PlayerCards,
+	PlayerTitles,
+	Seasons,
+	Sprays,
+	Themes,
+	Weapons,
+} from './'
+
+export type Endpoints = Agents &
+	Buddies &
+	Bundles &
+	Ceremonies &
+	CompetitiveTiers &
+	ContentTiers &
+	Contracts &
+	Currencies &
+	Events &
+	Gamemodes &
+	Gear &
+	LevelBorders &
+	Maps &
+	PlayerCards &
+	PlayerTitles &
+	Seasons &
+	Sprays &
+	Themes &
+	Weapons
+
 export type * from './agents'
 export type * from './buddies'
 export type * from './bundles'
