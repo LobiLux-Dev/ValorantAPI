@@ -1,3 +1,3 @@
-import { Base } from './base'
+import { Base } from './'
 
 export class Bundles extends Base {}
