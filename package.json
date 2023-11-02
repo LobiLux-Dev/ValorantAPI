@@ -1,6 +1,6 @@
 {
 	"name": "valorant-api",
-	"version": "1.6.4",
+	"version": "1.6.5",
 	"description": "TypeScript library designed to facilitate the retrieval of data from the popular video game Valorant.",
 	"main": "src/index.ts",
 	"scripts": {

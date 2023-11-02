@@ -1,1 +1,5 @@
-export interface Ceremonies {}
+export interface Ceremony {
+	uuid: string
+	displayName: string
+	assetPath: string
+}
