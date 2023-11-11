@@ -1,1 +1,1 @@
-export interface ContentTiers {}
+export interface ContentTier {}

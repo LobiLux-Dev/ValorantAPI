@@ -1,1 +1,1 @@
-export interface Seasons {}
+export interface Season {}

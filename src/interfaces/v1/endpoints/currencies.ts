@@ -1,1 +1,1 @@
-export interface Currencies {}
+export interface Currency {}

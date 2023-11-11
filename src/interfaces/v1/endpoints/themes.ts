@@ -1,1 +1,1 @@
-export interface Themes {}
+export interface Theme {}

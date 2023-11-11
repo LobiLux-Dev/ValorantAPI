@@ -1,1 +1,1 @@
-export interface Events {}
+export interface Event {}

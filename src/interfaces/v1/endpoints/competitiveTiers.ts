@@ -1,1 +1,1 @@
-export interface CompetitiveTiers {}
+export interface CompetitiveTier {}

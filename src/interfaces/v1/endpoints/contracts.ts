@@ -1,1 +1,1 @@
-export interface Contracts {}
+export interface Contract {}

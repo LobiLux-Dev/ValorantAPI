@@ -1,1 +1,1 @@
-export interface Weapons {}
+export interface Weapon {}

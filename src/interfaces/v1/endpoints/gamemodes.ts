@@ -1,1 +1,1 @@
-export interface Gamemodes {}
+export interface Gamemode {}

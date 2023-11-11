@@ -1,1 +1,1 @@
-export interface Sprays {}
+export interface Spray {}

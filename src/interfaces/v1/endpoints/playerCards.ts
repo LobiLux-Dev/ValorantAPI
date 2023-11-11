@@ -1,1 +1,1 @@
-export interface PlayerCards {}
+export interface PlayerCard {}

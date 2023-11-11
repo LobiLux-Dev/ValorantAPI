@@ -1,1 +1,1 @@
-export interface PlayerTitles {}
+export interface PlayerTitle {}

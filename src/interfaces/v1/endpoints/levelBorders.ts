@@ -1,1 +1,1 @@
-export interface LevelBorders {}
+export interface LevelBorder {}
