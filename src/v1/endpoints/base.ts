@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { CodeLang, type Data, type ServerResponse } from '../../interfaces'
+import { CodeLang, type Data, type ServerResponse } from '../../interfaces/v1'
 
 export abstract class Base<T extends Data> {
 	private readonly apiURL: string = 'https://valorant-api.com/v1'
