@@ -1,44 +1,46 @@
 import {
-	Agents,
-	Buddies,
-	Bundles,
-	Ceremonies,
-	CompetitiveTiers,
-	ContentTiers,
-	Contracts,
-	Currencies,
-	Events,
-	Gamemodes,
+	Agent,
+	Buddy,
+	Bundle,
+	Ceremony,
+	CompetitiveTier,
+	ContentTier,
+	Contract,
+	Currency,
+	Event,
+	Gamemode,
 	Gear,
-	LevelBorders,
-	Maps,
-	PlayerCards,
-	PlayerTitles,
-	Seasons,
-	Sprays,
-	Themes,
-	Weapons,
+	Level,
+	LevelBorder,
+	Map,
+	PlayerCard,
+	PlayerTitle,
+	Season,
+	Spray,
+	Theme,
+	Weapon,
 } from './'
 
-export type Endpoints = Agents &
-	Buddies &
-	Bundles &
-	Ceremonies &
-	CompetitiveTiers &
-	ContentTiers &
-	Contracts &
-	Currencies &
-	Events &
-	Gamemodes &
+export type Data = Agent &
+	Buddy &
+	Bundle &
+	Ceremony &
+	CompetitiveTier &
+	ContentTier &
+	Contract &
+	Currency &
+	Event &
+	Gamemode &
 	Gear &
-	LevelBorders &
-	Maps &
-	PlayerCards &
-	PlayerTitles &
-	Seasons &
-	Sprays &
-	Themes &
-	Weapons
+	Level &
+	LevelBorder &
+	Map &
+	PlayerCard &
+	PlayerTitle &
+	Season &
+	Spray &
+	Theme &
+	Weapon
 
 export type * from './agents'
 export type * from './buddies'
