@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, Bundle } from '../../interfaces'
+import { CodeLang, type Bundle } from '../../interfaces'
 
 export class Bundles extends Base<Bundle> {
 	constructor(codeLang: CodeLang) {

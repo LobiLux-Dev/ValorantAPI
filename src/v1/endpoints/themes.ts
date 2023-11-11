@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, Theme } from '../../interfaces'
+import { CodeLang, type Theme } from '../../interfaces'
 
 export class Themes extends Base<Theme> {
 	constructor(codeLang: CodeLang) {

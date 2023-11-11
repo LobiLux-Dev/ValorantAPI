@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, LevelBorder } from '../../interfaces'
+import { CodeLang, type LevelBorder } from '../../interfaces'
 
 export class LevelBorders extends Base<LevelBorder> {
 	constructor(codeLang: CodeLang) {

@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { Agent, CodeLang } from '../../interfaces'
+import { CodeLang, type Agent } from '../../interfaces'
 
 export class Agents extends Base<Agent> {
 	constructor(codeLang: CodeLang) {

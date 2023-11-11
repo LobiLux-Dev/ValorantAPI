@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, Season } from '../../interfaces'
+import { CodeLang, type Season } from '../../interfaces'
 
 export class Seasons extends Base<Season> {
 	constructor(codeLang: CodeLang) {

@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, ContentTier } from '../../interfaces'
+import { CodeLang, type ContentTier } from '../../interfaces'
 
 export class ContentTiers extends Base<ContentTier> {
 	constructor(codeLang: CodeLang) {

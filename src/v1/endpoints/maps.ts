@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, Map } from '../../interfaces'
+import { CodeLang, type Map } from '../../interfaces'
 
 export class Maps extends Base<Map> {
 	constructor(codeLang: CodeLang) {

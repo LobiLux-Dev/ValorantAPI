@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, Gear as IGear } from '../../interfaces'
+import { CodeLang, type Gear as IGear } from '../../interfaces'
 
 export class Gear extends Base<IGear> {
 	constructor(codeLang: CodeLang) {

@@ -1,6 +1,6 @@
 import { Base } from './'
 
-import { CodeLang, Currency } from '../../interfaces'
+import { CodeLang, type Currency } from '../../interfaces'
 
 export class Currencies extends Base<Currency> {
 	constructor(codeLang: CodeLang) {
