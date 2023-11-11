@@ -1,3 +1,13 @@
 import { Base } from './'
 
-export class Themes extends Base {}
+import { CodeLang, Theme } from '../../interfaces'
+
+export class Themes extends Base<Theme> {
+	constructor(codeLang: CodeLang) {
+		super(codeLang)
+	}
+
+	public get themes() {
+		return this.data
+	}
+}

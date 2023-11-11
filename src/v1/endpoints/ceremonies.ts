@@ -1,3 +1,13 @@
 import { Base } from './'
 
-export class Ceremonies extends Base {}
+import { CodeLang, Ceremony } from '../../interfaces'
+
+export class Ceremonies extends Base<Ceremony> {
+	constructor(codeLang: CodeLang) {
+		super(codeLang)
+	}
+
+	public get ceremonies() {
+		return this.data
+	}
+}

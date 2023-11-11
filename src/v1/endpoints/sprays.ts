@@ -1,3 +1,13 @@
 import { Base } from './'
 
-export class Sprays extends Base {}
+import { CodeLang, Spray } from '../../interfaces'
+
+export class Sprays extends Base<Spray> {
+	constructor(codeLang: CodeLang) {
+		super(codeLang)
+	}
+
+	public get sprays() {
+		return this.data
+	}
+}
