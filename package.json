@@ -2,9 +2,11 @@
 	"name": "valorant-api",
 	"version": "1.6.5",
 	"description": "TypeScript library designed to facilitate the retrieval of data from the popular video game Valorant.",
-	"main": "src/index.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"test": "jest",
+		"build": "rimraf dist && tsc",
 		"prepare": "husky install",
 		"format": "prettier --write ./src/"
 	},
@@ -21,6 +23,7 @@
 		"husky": "^8.0.3",
 		"jest": "^29.7.0",
 		"prettier": "^3.0.3",
+		"rimraf": "^5.0.5",
 		"ts-jest": "^29.1.1",
 		"typescript": "^5.2.2"
 	},
