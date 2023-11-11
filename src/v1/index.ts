@@ -19,7 +19,29 @@ import {
 	Themes,
 	Weapons,
 } from './endpoints'
-import { CodeLang, type Language } from '../interfaces/v1'
+import {
+	CodeLang,
+	type Agent,
+	type Buddy,
+	type Bundle,
+	type Ceremony,
+	type CompetitiveTier,
+	type ContentTier,
+	type Contract,
+	type Currency,
+	type Event,
+	type Gamemode,
+	type Gear as IGear,
+	type Language,
+	type LevelBorder,
+	type Map,
+	type PlayerCard,
+	type PlayerTitle,
+	type Season,
+	type Spray,
+	type Theme,
+	type Weapon,
+} from '../interfaces/v1'
 
 export class ValorantAPIV1 {
 	private codeLang: CodeLang
@@ -28,79 +50,79 @@ export class ValorantAPIV1 {
 		this.codeLang = CodeLang[language]
 	}
 
-	public get agents(): Agents {
-		return new Agents(this.codeLang)
+	public get agents(): Agent[] {
+		return new Agents(this.codeLang).agents
 	}
 
-	public get buddies(): Buddies {
-		return new Buddies(this.codeLang)
+	public get buddies(): Buddy[] {
+		return new Buddies(this.codeLang).buddies
 	}
 
-	public get bundles(): Bundles {
-		return new Bundles(this.codeLang)
+	public get bundles(): Bundle[] {
+		return new Bundles(this.codeLang).bundles
 	}
 
-	public get ceremonies(): Ceremonies {
-		return new Ceremonies(this.codeLang)
+	public get ceremonies(): Ceremony[] {
+		return new Ceremonies(this.codeLang).ceremonies
 	}
 
-	public get competitiveTiers(): CompetitiveTiers {
-		return new CompetitiveTiers(this.codeLang)
+	public get competitiveTiers(): CompetitiveTier[] {
+		return new CompetitiveTiers(this.codeLang).competitiveTiers
 	}
 
-	public get contentTiers(): ContentTiers {
-		return new ContentTiers(this.codeLang)
+	public get contentTiers(): ContentTier[] {
+		return new ContentTiers(this.codeLang).contentTiers
 	}
 
-	public get contracts(): Contracts {
-		return new Contracts(this.codeLang)
+	public get contracts(): Contract[] {
+		return new Contracts(this.codeLang).contracts
 	}
 
-	public get currencies(): Currencies {
-		return new Currencies(this.codeLang)
+	public get currencies(): Currency[] {
+		return new Currencies(this.codeLang).currencies
 	}
 
-	public get events(): Events {
-		return new Events(this.codeLang)
+	public get events(): Event[] {
+		return new Events(this.codeLang).events
 	}
 
-	public get gamemodes(): Gamemodes {
-		return new Gamemodes(this.codeLang)
+	public get gamemodes(): Gamemode[] {
+		return new Gamemodes(this.codeLang).gamemodes
 	}
 
-	public get gear(): Gear {
-		return new Gear(this.codeLang)
+	public get gear(): IGear[] {
+		return new Gear(this.codeLang).gear
 	}
 
-	public get levelBorders(): LevelBorders {
-		return new LevelBorders(this.codeLang)
+	public get levelBorders(): LevelBorder[] {
+		return new LevelBorders(this.codeLang).levelBorders
 	}
 
-	public get maps(): Maps {
-		return new Maps(this.codeLang)
+	public get maps(): Map[] {
+		return new Maps(this.codeLang).maps
 	}
 
-	public get playerCards(): PlayerCards {
-		return new PlayerCards(this.codeLang)
+	public get playerCards(): PlayerCard[] {
+		return new PlayerCards(this.codeLang).playerCards
 	}
 
-	public get playerTitles(): PlayerTitles {
-		return new PlayerTitles(this.codeLang)
+	public get playerTitles(): PlayerTitle[] {
+		return new PlayerTitles(this.codeLang).playerTitles
 	}
 
-	public get seasons(): Seasons {
-		return new Seasons(this.codeLang)
+	public get seasons(): Season[] {
+		return new Seasons(this.codeLang).seasons
 	}
 
-	public get sprays(): Sprays {
-		return new Sprays(this.codeLang)
+	public get sprays(): Spray[] {
+		return new Sprays(this.codeLang).sprays
 	}
 
-	public get themes(): Themes {
-		return new Themes(this.codeLang)
+	public get themes(): Theme[] {
+		return new Themes(this.codeLang).themes
 	}
 
-	public get weapons(): Weapons {
-		return new Weapons(this.codeLang)
+	public get weapons(): Weapon[] {
+		return new Weapons(this.codeLang).weapons
 	}
 }
