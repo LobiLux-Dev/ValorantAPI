@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-import { CodeLang, Endpoints, ServerResponse } from '../../interfaces'
+import { CodeLang, Data, ServerResponse } from '../../interfaces'
 
-export abstract class Base<T extends Endpoints> {
+export abstract class Base<T extends Data> {
 	private readonly apiURL: string = 'https://valorant-api.com/v1'
 	private endpoint: string
 

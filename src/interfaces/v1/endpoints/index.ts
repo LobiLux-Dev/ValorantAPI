@@ -21,26 +21,27 @@ import {
 	Weapon,
 } from './'
 
-export type Data = Agent &
-	Buddy &
-	Bundle &
-	Ceremony &
-	CompetitiveTier &
-	ContentTier &
-	Contract &
-	Currency &
-	Event &
-	Gamemode &
-	Gear &
-	Level &
-	LevelBorder &
-	Map &
-	PlayerCard &
-	PlayerTitle &
-	Season &
-	Spray &
-	Theme &
-	Weapon
+export type Data =
+	| Agent
+	| Buddy
+	| Bundle
+	| Ceremony
+	| CompetitiveTier
+	| ContentTier
+	| Contract
+	| Currency
+	| Event
+	| Gamemode
+	| Gear
+	| Level
+	| LevelBorder
+	| Map
+	| PlayerCard
+	| PlayerTitle
+	| Season
+	| Spray
+	| Theme
+	| Weapon
 
 export type * from './agents'
 export type * from './buddies'
