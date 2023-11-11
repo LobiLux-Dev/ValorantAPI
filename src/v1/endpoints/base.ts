@@ -4,24 +4,29 @@ import { CodeLang, ServerResponse } from '../../interfaces/v1'
 
 export abstract class Base<T> {
 	private readonly apiURL: string = 'https://valorant-api.com/v1'
-	private endpoint: string = this.constructor.name.toLowerCase()
-	private readonly finalURL: string
+	private endpoint: string
 
 	protected data: T[] = []
 
 	public constructor(protected readonly codeLang: CodeLang) {
-		this.finalURL = `${this.apiURL}/${this.endpoint}?language=${this.codeLang}`
+		this.endpoint = this.constructor.name.toLowerCase()
 
-		this.fetch()
+		this.fetchData()
 	}
 
-	private fetch = async (): Promise<void> => {
+	private get finalURL(): string {
+		return `${this.apiURL}/${this.endpoint}?language=${this.codeLang}`
+	}
+
+	private async fetchData(): Promise<void> {
 		try {
 			const { data } = await axios.get<ServerResponse<T>>(this.finalURL)
 
 			this.data = data.data!
-		} catch (error: any) {
-			throw new Error(`An error occurred while fetching the data. ${error}`)
+		} catch (error) {
+			const errorMessage = error instanceof Error ? error.message : String(error)
+
+			throw new Error(`Failed to fetch data from ${this.finalURL}. ${errorMessage}`)
 		}
 	}
 }
